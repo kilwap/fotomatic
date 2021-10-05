@@ -1,5 +1,5 @@
 /* Universal Styles */
-@import "reset.css"; 
+@import "reset.css";
 
 html {
   font-family: "Roboto", sans-serif;
@@ -13,6 +13,7 @@ html {
 
 .center {
   text-align: center;
+  height: 100%;
 }
 
 .button {
@@ -23,10 +24,14 @@ html {
 
 .image-container {
   overflow: hidden;
+  height: 65%;
 }
 
 .image-container img {
   display: block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 760px) {
@@ -126,6 +131,8 @@ header .mobile {
   align-items: flex-start;
   height: 43.5rem;
   background-image: url("../images/banner-landingpage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #sign-up-cta {
@@ -221,28 +228,31 @@ header .mobile {
 #features-section {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding: 4rem 5% 2.875rem 5%;
   background-color: #f3f3f3;
+  flex-wrap: wrap;
 }
 
 .feature {
   flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
+  margin: 0px 1.1875rem;
   background-color: white;
+  height: 39.6875rem;
 }
 
 .feature .image-container {
-  width: 90%;
-  height: 65%;
-  margin: 0 auto;
+  margin: 2rem;
+  margin-bottom: 2.5rem;
 }
-
+.feature .content{
+  height: 9.1875rem;
+}
 .feature h2 {
   padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
+  line-height: 1.2;
 }
 
 .feature h3 {
